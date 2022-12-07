@@ -9,7 +9,7 @@ driver.maximize_window()
 driver.get("C:/Users/yetki/OneDrive/Masaüstü/Selenium/7-radyo-dugmesi/index.html")
 
 dropdown = driver.find_element(By.ID, "pay")
-odeme = Select()
+odeme = Select(dropdown)
 odeme_tipleri = odeme.options  # web element listesi her bir option tagi için
 
 for tip in odeme_tipleri:
